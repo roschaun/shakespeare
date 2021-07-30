@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E49B51F26B4B356001C90CB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B51E26B4B356001C90CB /* Tests_iOS.swift */; };
+		1E49B52A26B4B356001C90CB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B52926B4B356001C90CB /* Tests_macOS.swift */; };
+		1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
+		1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
+		1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50426B4B353001C90CB /* ContentView.swift */; };
+		1E49B52F26B4B356001C90CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50426B4B353001C90CB /* ContentView.swift */; };
+		1E49B53026B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
+		1E49B53126B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
+		1E49B54126B4BD9B001C90CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E49B51B26B4B356001C90CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E49B4FE26B4B352001C90CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E49B50926B4B356001C90CB;
+			remoteInfo = "Shakespeare (iOS)";
+		};
+		1E49B52626B4B356001C90CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E49B4FE26B4B352001C90CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E49B51126B4B356001C90CB;
+			remoteInfo = "Shakespeare (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E49B50326B4B353001C90CB /* ShakespeareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareApp.swift; sourceTree = "<group>"; };
+		1E49B50426B4B353001C90CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E49B50526B4B356001C90CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E49B50A26B4B356001C90CB /* Shakespeare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shakespeare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E49B50D26B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E49B51226B4B356001C90CB /* Shakespeare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shakespeare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E49B51426B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E49B51526B4B356001C90CB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1E49B51A26B4B356001C90CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E49B51E26B4B356001C90CB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		1E49B52026B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E49B52526B4B356001C90CB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E49B52926B4B356001C90CB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		1E49B52B26B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E49B50726B4B356001C90CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B50F26B4B356001C90CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B51726B4B356001C90CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B52226B4B356001C90CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E49B4FD26B4B352001C90CB = {
+			isa = PBXGroup;
+			children = (
+				1E49B50226B4B353001C90CB /* Shared */,
+				1E49B50C26B4B356001C90CB /* iOS */,
+				1E49B51326B4B356001C90CB /* macOS */,
+				1E49B51D26B4B356001C90CB /* Tests iOS */,
+				1E49B52826B4B356001C90CB /* Tests macOS */,
+				1E49B50B26B4B356001C90CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E49B50226B4B353001C90CB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B50326B4B353001C90CB /* ShakespeareApp.swift */,
+				1E49B50426B4B353001C90CB /* ContentView.swift */,
+				1E49B50526B4B356001C90CB /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1E49B50B26B4B356001C90CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B50A26B4B356001C90CB /* Shakespeare.app */,
+				1E49B51226B4B356001C90CB /* Shakespeare.app */,
+				1E49B51A26B4B356001C90CB /* Tests iOS.xctest */,
+				1E49B52526B4B356001C90CB /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E49B50C26B4B356001C90CB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B50D26B4B356001C90CB /* Info.plist */,
+				1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1E49B51326B4B356001C90CB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B51426B4B356001C90CB /* Info.plist */,
+				1E49B51526B4B356001C90CB /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1E49B51D26B4B356001C90CB /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B51E26B4B356001C90CB /* Tests_iOS.swift */,
+				1E49B52026B4B356001C90CB /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		1E49B52826B4B356001C90CB /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B52926B4B356001C90CB /* Tests_macOS.swift */,
+				1E49B52B26B4B356001C90CB /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E49B50926B4B356001C90CB /* Shakespeare (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E49B53426B4B356001C90CB /* Build configuration list for PBXNativeTarget "Shakespeare (iOS)" */;
+			buildPhases = (
+				1E49B50626B4B356001C90CB /* Sources */,
+				1E49B50726B4B356001C90CB /* Frameworks */,
+				1E49B50826B4B356001C90CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shakespeare (iOS)";
+			productName = "Shakespeare (iOS)";
+			productReference = 1E49B50A26B4B356001C90CB /* Shakespeare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E49B51126B4B356001C90CB /* Shakespeare (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E49B53726B4B356001C90CB /* Build configuration list for PBXNativeTarget "Shakespeare (macOS)" */;
+			buildPhases = (
+				1E49B50E26B4B356001C90CB /* Sources */,
+				1E49B50F26B4B356001C90CB /* Frameworks */,
+				1E49B51026B4B356001C90CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shakespeare (macOS)";
+			productName = "Shakespeare (macOS)";
+			productReference = 1E49B51226B4B356001C90CB /* Shakespeare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E49B51926B4B356001C90CB /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E49B53A26B4B356001C90CB /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				1E49B51626B4B356001C90CB /* Sources */,
+				1E49B51726B4B356001C90CB /* Frameworks */,
+				1E49B51826B4B356001C90CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E49B51C26B4B356001C90CB /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 1E49B51A26B4B356001C90CB /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1E49B52426B4B356001C90CB /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E49B53D26B4B356001C90CB /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				1E49B52126B4B356001C90CB /* Sources */,
+				1E49B52226B4B356001C90CB /* Frameworks */,
+				1E49B52326B4B356001C90CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E49B52726B4B356001C90CB /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 1E49B52526B4B356001C90CB /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E49B4FE26B4B352001C90CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1E49B50926B4B356001C90CB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1E49B51126B4B356001C90CB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1E49B51926B4B356001C90CB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1E49B50926B4B356001C90CB;
+					};
+					1E49B52426B4B356001C90CB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1E49B51126B4B356001C90CB;
+					};
+				};
+			};
+			buildConfigurationList = 1E49B50126B4B352001C90CB /* Build configuration list for PBXProject "Shakespeare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E49B4FD26B4B352001C90CB;
+			productRefGroup = 1E49B50B26B4B356001C90CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E49B50926B4B356001C90CB /* Shakespeare (iOS) */,
+				1E49B51126B4B356001C90CB /* Shakespeare (macOS) */,
+				1E49B51926B4B356001C90CB /* Tests iOS */,
+				1E49B52426B4B356001C90CB /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E49B50826B4B356001C90CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B54126B4BD9B001C90CB /* LaunchScreen.storyboard in Resources */,
+				1E49B53026B4B356001C90CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B51026B4B356001C90CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B53126B4B356001C90CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B51826B4B356001C90CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B52326B4B356001C90CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E49B50626B4B356001C90CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */,
+				1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B50E26B4B356001C90CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B52F26B4B356001C90CB /* ContentView.swift in Sources */,
+				1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B51626B4B356001C90CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B51F26B4B356001C90CB /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E49B52126B4B356001C90CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E49B52A26B4B356001C90CB /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E49B51C26B4B356001C90CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E49B50926B4B356001C90CB /* Shakespeare (iOS) */;
+			targetProxy = 1E49B51B26B4B356001C90CB /* PBXContainerItemProxy */;
+		};
+		1E49B52726B4B356001C90CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E49B51126B4B356001C90CB /* Shakespeare (macOS) */;
+			targetProxy = 1E49B52626B4B356001C90CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E49B53226B4B356001C90CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E49B53326B4B356001C90CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1E49B53526B4B356001C90CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roschaun.Shakespeare;
+				PRODUCT_NAME = Shakespeare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E49B53626B4B356001C90CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roschaun.Shakespeare;
+				PRODUCT_NAME = Shakespeare;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E49B53826B4B356001C90CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roschaun.Shakespeare;
+				PRODUCT_NAME = Shakespeare;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1E49B53926B4B356001C90CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roschaun.Shakespeare;
+				PRODUCT_NAME = Shakespeare;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1E49B53B26B4B356001C90CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roschaun.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shakespeare (iOS)";
+			};
+			name = Debug;
+		};
+		1E49B53C26B4B356001C90CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roschaun.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shakespeare (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E49B53E26B4B356001C90CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roschaun.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Shakespeare (macOS)";
+			};
+			name = Debug;
+		};
+		1E49B53F26B4B356001C90CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roschaun.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Shakespeare (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E49B50126B4B352001C90CB /* Build configuration list for PBXProject "Shakespeare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E49B53226B4B356001C90CB /* Debug */,
+				1E49B53326B4B356001C90CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E49B53426B4B356001C90CB /* Build configuration list for PBXNativeTarget "Shakespeare (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E49B53526B4B356001C90CB /* Debug */,
+				1E49B53626B4B356001C90CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E49B53726B4B356001C90CB /* Build configuration list for PBXNativeTarget "Shakespeare (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E49B53826B4B356001C90CB /* Debug */,
+				1E49B53926B4B356001C90CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E49B53A26B4B356001C90CB /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E49B53B26B4B356001C90CB /* Debug */,
+				1E49B53C26B4B356001C90CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E49B53D26B4B356001C90CB /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E49B53E26B4B356001C90CB /* Debug */,
+				1E49B53F26B4B356001C90CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E49B4FE26B4B352001C90CB /* Project object */;
+}
