@@ -9,5 +9,5 @@ Sample MVVM SwiftUI App that incorporates the following:
 - Combine Data Bindings
 - Swift Extensions
 - Manual Dependency Injection
-- Unit Testing w/ Code Coverage
+- Unit Testing (with Object Mocking and Code Coverage)
 - Simple UI Testing
