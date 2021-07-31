@@ -1,8 +1,8 @@
 //
 //  ShakespeareApp.swift
-//  Shared
+//  WatchApp Extension
 //
-//  Created by Roschaun Johnson on 7/30/21.
+//  Created by Roschaun Johnson on 7/31/21.
 //
 
 import SwiftUI
@@ -11,7 +11,9 @@ import SwiftUI
 struct ShakespeareApp: App {
     var body: some Scene {
         WindowGroup {
-            MainListView()
+            NavigationView {
+                MainListView()
+            }
         }
     }
 }
