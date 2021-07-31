@@ -11,7 +11,7 @@ import SwiftUI
 struct ShakespeareApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainListView()
         }
     }
 }
