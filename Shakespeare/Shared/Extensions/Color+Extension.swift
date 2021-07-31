@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Color {
     static let theme = Color.Theme()
-    
+
     struct Theme {
          let background = Color("BackgroundColor")
     }
