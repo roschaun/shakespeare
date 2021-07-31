@@ -31,7 +31,7 @@ class DetailViewModelTests: TestCase {
         let viewState = detailViewState.first!
         XCTAssertFalse(viewState.isLoading)
         XCTAssertFalse(viewState.showError)
-        XCTAssert(viewState.quoteReview.id == id)
+        XCTAssert(viewState.quoteReviewState.id == id)
     }
 
     func testGetQuoteReviewsNetworkError() throws {

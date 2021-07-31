@@ -14,15 +14,19 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List(viewModel.listViewState.quoteReviews, id: \.id) { quoteReview in
-                    NavigationLink(destination: MainDetailView(id: quoteReview.id ?? "")) {
-                        MainRowView(quoteReview: quoteReview)
+                List(viewModel.listViewState.rowViewState, id: \.id) { rowViewState in
+                    ZStack {
+                        MainRowView(rowViewState: rowViewState)
+                        NavigationLink(destination: MainDetailView(id: rowViewState.id)) {
+                        }
+                        .hidden()
                     }
                 }
+                .background(Color.clear)
             }.onAppear(perform: {
                 viewModel.getQuoteReviews()
             })
-            .navigationTitle("Shakespeare")
+            .navigationTitle("Shakespeare Reviews")
         }
     }
 }
