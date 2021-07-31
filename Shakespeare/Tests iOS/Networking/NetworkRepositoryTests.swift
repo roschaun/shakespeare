@@ -9,27 +9,17 @@ import XCTest
 import Combine
 @testable import Shakespeare
 
-class NetworkRepositoryTests: XCTestCase {
+class NetworkRepositoryTests: TestCase {
 
     var cancellables = Set<AnyCancellable>()
-    var networkController: NetworkControllerProtocol = MockReviewsNetworkController()
-    var networkRepository: NetworkRepositoryProtocol!
     var quoteReviews: [QuoteReview]!
     var quoteReview: QuoteReview!
     var error: Error?
     var expectation: XCTestExpectation!
     let id = "9784620626604"
-    let url = URL(string: "https://shakespeare.podium.com")!
-
-    static var filename = "NetworkQuoteReviews"
 
     override func setUpWithError() throws {
         cancellables = []
-        networkRepository = NetworkRepository(networkController: networkController,
-                                              baseUrl: url,
-                                              path: "api/reviews",
-                                              headers: ["x-api-key": "H3TM28wjL8R4#HTnqk?c"])
-
         quoteReviews = [QuoteReview]()
         quoteReview = QuoteReview()
         error = nil
@@ -41,7 +31,7 @@ class NetworkRepositoryTests: XCTestCase {
     }
 
     func testGetQuoteReviews() throws {
-        NetworkRepositoryTests.filename = "NetworkQuoteReviews"
+        setupNetworkRepository("NetworkQuoteReviews")
         networkRepository.getQuoteReviews()
             .sink { [self] (completion) in
                 switch completion {
@@ -56,11 +46,11 @@ class NetworkRepositoryTests: XCTestCase {
             }.store(in: &cancellables)
         waitForExpectations(timeout: 10)
         XCTAssertNil(error)
-        XCTAssert(quoteReviews.count == 6)
+        XCTAssert(quoteReviews.count == reviewCount)
     }
 
     func testGetQuoteReview() throws {
-        NetworkRepositoryTests.filename = "NetworkQuoteReview"
+        setupNetworkRepository("NetworkQuoteReview")
         networkRepository.getQuoteReview(id)
             .sink { [self] (completion) in
                 switch completion {
@@ -80,7 +70,7 @@ class NetworkRepositoryTests: XCTestCase {
     }
 
     func testGetQuoteReviewInvalidData() throws {
-        NetworkRepositoryTests.filename = "NetworkQuoteReviewInvalidData"
+        setupNetworkRepository("NetworkQuoteReviewInvalidData")
         networkRepository.getQuoteReview(id)
             .sink { [self] (completion) in
                 switch completion {
@@ -121,31 +111,4 @@ class NetworkRepositoryTests: XCTestCase {
         XCTAssertNil(error)
         XCTAssert(quoteReviews.count > 0)
     }
-}
-
-class JsonUtilities {
-    class func loadJsonFile(_ filename: String) -> Data? {
-        let bundle = Bundle(for: NetworkRepositoryTests.self)
-        if let file = bundle.path(forResource: filename, ofType: "json") {
-            let jsonData = try? String(contentsOfFile: file).data(using: .utf8)
-            return jsonData
-        }
-        return nil
-    }
-}
-
-class MockReviewsNetworkController: NetworkControllerProtocol {
-
-    func sendRequest<T>(_ request: URLRequest) -> AnyPublisher<NetworkResponse<T>, Error> where T: Decodable {
-        let response = HTTPURLResponse(url: request.url!,
-                                       statusCode: 200,
-                                       httpVersion: "HTTP/1.1",
-                                       headerFields: request.allHTTPHeaderFields)!
-        let data = JsonUtilities.loadJsonFile(NetworkRepositoryTests.filename)!
-        let value = try? JSONDecoder().decode(T.self, from: data)
-        return Just(NetworkResponse(value: value!, response: response))
-                        .setFailureType(to: Error.self)
-                        .eraseToAnyPublisher()
-    }
-
 }

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
 		1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
-		1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50426B4B353001C90CB /* ContentView.swift */; };
-		1E49B52F26B4B356001C90CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50426B4B353001C90CB /* ContentView.swift */; };
 		1E49B53026B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
 		1E49B53126B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
 		1E49B54126B4BD9B001C90CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */; };
@@ -33,6 +31,22 @@
 		1E49B56026B51667001C90CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55426B4CA0F001C90CB /* Date+Extension.swift */; };
 		1E49B56226B5179A001C90CB /* NetworkQuoteReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */; };
 		1E49B56426B51A92001C90CB /* NetworkQuoteReviewInvalidData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */; };
+		1E49B56926B5890D001C90CB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56826B5890D001C90CB /* MainListView.swift */; };
+		1E49B56B26B58B02001C90CB /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56A26B58B02001C90CB /* MainListViewModel.swift */; };
+		1E49B56D26B58C08001C90CB /* ListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56C26B58C08001C90CB /* ListViewState.swift */; };
+		1E49B56F26B58C39001C90CB /* MainRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56E26B58C39001C90CB /* MainRowView.swift */; };
+		1E49B57226B59515001C90CB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57126B59515001C90CB /* ViewModel.swift */; };
+		1E49B57526B596F6001C90CB /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57426B596F6001C90CB /* XCTest+Extension.swift */; };
+		1E49B57826B598E0001C90CB /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57726B598E0001C90CB /* ListViewModelTests.swift */; };
+		1E49B57A26B599AA001C90CB /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57926B599AA001C90CB /* TestCase.swift */; };
+		1E49B57C26B59A50001C90CB /* MockNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57B26B59A50001C90CB /* MockNetworkController.swift */; };
+		1E49B57D26B59DA2001C90CB /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56A26B58B02001C90CB /* MainListViewModel.swift */; };
+		1E49B57E26B59DA4001C90CB /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56A26B58B02001C90CB /* MainListViewModel.swift */; };
+		1E49B57F26B59DA8001C90CB /* ListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56C26B58C08001C90CB /* ListViewState.swift */; };
+		1E49B58026B59DA8001C90CB /* ListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B56C26B58C08001C90CB /* ListViewState.swift */; };
+		1E49B58126B59DB0001C90CB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57126B59515001C90CB /* ViewModel.swift */; };
+		1E49B58226B59DB1001C90CB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B57126B59515001C90CB /* ViewModel.swift */; };
+		1E49B58426B5A507001C90CB /* NetworkQuoteReviewsInvalidData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B58326B5A507001C90CB /* NetworkQuoteReviewsInvalidData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +68,6 @@
 
 /* Begin PBXFileReference section */
 		1E49B50326B4B353001C90CB /* ShakespeareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareApp.swift; sourceTree = "<group>"; };
-		1E49B50426B4B353001C90CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E49B50526B4B356001C90CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E49B50A26B4B356001C90CB /* Shakespeare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shakespeare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E49B50D26B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +88,16 @@
 		1E49B55A26B50C90001C90CB /* NetworkQuoteReviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReviews.json; sourceTree = "<group>"; };
 		1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReview.json; sourceTree = "<group>"; };
 		1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReviewInvalidData.json; sourceTree = "<group>"; };
+		1E49B56826B5890D001C90CB /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		1E49B56A26B58B02001C90CB /* MainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModel.swift; sourceTree = "<group>"; };
+		1E49B56C26B58C08001C90CB /* ListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewState.swift; sourceTree = "<group>"; };
+		1E49B56E26B58C39001C90CB /* MainRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRowView.swift; sourceTree = "<group>"; };
+		1E49B57126B59515001C90CB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1E49B57426B596F6001C90CB /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
+		1E49B57726B598E0001C90CB /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		1E49B57926B599AA001C90CB /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		1E49B57B26B59A50001C90CB /* MockNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkController.swift; sourceTree = "<group>"; };
+		1E49B58326B5A507001C90CB /* NetworkQuoteReviewsInvalidData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReviewsInvalidData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +147,11 @@
 		1E49B50226B4B353001C90CB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1E49B57026B594EE001C90CB /* ViewModel */,
+				1E49B56726B588B9001C90CB /* ListView */,
 				1E49B55326B4C9E0001C90CB /* Extensions */,
-				1E49B54F26B4C6F8001C90CB /* Domain */,
 				1E49B54426B4C19E001C90CB /* Networking */,
 				1E49B50326B4B353001C90CB /* ShakespeareApp.swift */,
-				1E49B50426B4B353001C90CB /* ContentView.swift */,
 				1E49B50526B4B356001C90CB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -166,8 +189,11 @@
 		1E49B51D26B4B356001C90CB /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1E49B57626B598A5001C90CB /* ListView */,
+				1E49B57326B596DC001C90CB /* Extensions */,
 				1E49B55726B508CE001C90CB /* Networking */,
 				1E49B52026B4B356001C90CB /* Info.plist */,
+				1E49B57926B599AA001C90CB /* TestCase.swift */,
 			);
 			path = "Tests iOS";
 			sourceTree = "<group>";
@@ -209,6 +235,7 @@
 		1E49B55326B4C9E0001C90CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1E49B54F26B4C6F8001C90CB /* Domain */,
 				1E49B55426B4CA0F001C90CB /* Date+Extension.swift */,
 			);
 			path = Extensions;
@@ -217,12 +244,57 @@
 		1E49B55726B508CE001C90CB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1E49B58526B5A51F001C90CB /* JsonFiles */,
 				1E49B55826B508FB001C90CB /* NetworkRepositoryTests.swift */,
+				1E49B57B26B59A50001C90CB /* MockNetworkController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E49B56726B588B9001C90CB /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B56826B5890D001C90CB /* MainListView.swift */,
+				1E49B56E26B58C39001C90CB /* MainRowView.swift */,
+				1E49B56A26B58B02001C90CB /* MainListViewModel.swift */,
+				1E49B56C26B58C08001C90CB /* ListViewState.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		1E49B57026B594EE001C90CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B57126B59515001C90CB /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E49B57326B596DC001C90CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B57426B596F6001C90CB /* XCTest+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E49B57626B598A5001C90CB /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B57726B598E0001C90CB /* ListViewModelTests.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		1E49B58526B5A51F001C90CB /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B58326B5A507001C90CB /* NetworkQuoteReviewsInvalidData.json */,
 				1E49B55A26B50C90001C90CB /* NetworkQuoteReviews.json */,
 				1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */,
 				1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */,
 			);
-			path = Networking;
+			path = JsonFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E49B55B26B50C90001C90CB /* NetworkQuoteReviews.json in Resources */,
+				1E49B58426B5A507001C90CB /* NetworkQuoteReviewsInvalidData.json in Resources */,
 				1E49B56426B51A92001C90CB /* NetworkQuoteReviewInvalidData.json in Resources */,
 				1E49B56226B5179A001C90CB /* NetworkQuoteReview.json in Resources */,
 			);
@@ -408,12 +481,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49B56926B5890D001C90CB /* MainListView.swift in Sources */,
 				1E49B55126B4C71D001C90CB /* QuoteReview.swift in Sources */,
 				1E49B54926B4C213001C90CB /* NetworkRepository.swift in Sources */,
+				1E49B57226B59515001C90CB /* ViewModel.swift in Sources */,
 				1E49B54D26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */,
-				1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */,
 				1E49B55526B4CA0F001C90CB /* Date+Extension.swift in Sources */,
 				1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+				1E49B56F26B58C39001C90CB /* MainRowView.swift in Sources */,
+				1E49B56B26B58B02001C90CB /* MainListViewModel.swift in Sources */,
+				1E49B56D26B58C08001C90CB /* ListViewState.swift in Sources */,
 				1E49B54626B4C1BD001C90CB /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,11 +500,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E49B55226B4C71D001C90CB /* QuoteReview.swift in Sources */,
+				1E49B58126B59DB0001C90CB /* ViewModel.swift in Sources */,
 				1E49B54A26B4C213001C90CB /* NetworkRepository.swift in Sources */,
 				1E49B54E26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */,
-				1E49B52F26B4B356001C90CB /* ContentView.swift in Sources */,
+				1E49B57E26B59DA4001C90CB /* MainListViewModel.swift in Sources */,
 				1E49B55626B4CA0F001C90CB /* Date+Extension.swift in Sources */,
 				1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+				1E49B57F26B59DA8001C90CB /* ListViewState.swift in Sources */,
 				1E49B54726B4C1BD001C90CB /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,9 +518,16 @@
 				1E49B55F26B51630001C90CB /* QuoteReview.swift in Sources */,
 				1E49B55D26B51618001C90CB /* NetworkRepository.swift in Sources */,
 				1E49B55E26B5162C001C90CB /* NetworkQuoteReview.swift in Sources */,
+				1E49B57526B596F6001C90CB /* XCTest+Extension.swift in Sources */,
 				1E49B55926B508FB001C90CB /* NetworkRepositoryTests.swift in Sources */,
+				1E49B57A26B599AA001C90CB /* TestCase.swift in Sources */,
+				1E49B58226B59DB1001C90CB /* ViewModel.swift in Sources */,
+				1E49B57C26B59A50001C90CB /* MockNetworkController.swift in Sources */,
 				1E49B56026B51667001C90CB /* Date+Extension.swift in Sources */,
+				1E49B57826B598E0001C90CB /* ListViewModelTests.swift in Sources */,
 				1E49B55C26B515BC001C90CB /* NetworkController.swift in Sources */,
+				1E49B58026B59DA8001C90CB /* ListViewState.swift in Sources */,
+				1E49B57D26B59DA2001C90CB /* MainListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
