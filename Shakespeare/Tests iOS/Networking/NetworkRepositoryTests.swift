@@ -16,7 +16,6 @@ class NetworkRepositoryTests: TestCase {
     var quoteReview: QuoteReview!
     var error: Error?
     var expectation: XCTestExpectation!
-    let id = "9784620626604"
 
     override func setUpWithError() throws {
         cancellables = []
@@ -24,10 +23,6 @@ class NetworkRepositoryTests: TestCase {
         quoteReview = QuoteReview()
         error = nil
         expectation = self.expectation(description: "QuoteReview")
-    }
-
-    override func tearDownWithError() throws {
-
     }
 
     func testGetQuoteReviews() throws {
@@ -70,7 +65,7 @@ class NetworkRepositoryTests: TestCase {
     }
 
     func testGetQuoteReviewInvalidData() throws {
-        setupNetworkRepository("NetworkQuoteReviewInvalidData")
+        setupNetworkRepository("NetworkQuoteReviewInvalidDate")
         networkRepository.getQuoteReview(id)
             .sink { [self] (completion) in
                 switch completion {

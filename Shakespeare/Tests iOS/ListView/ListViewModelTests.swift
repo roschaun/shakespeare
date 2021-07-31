@@ -18,14 +18,6 @@ class ListViewModelTests: TestCase {
         mainListViewModel = MainListViewModel(networkRepository)
     }
 
-    override func setUpWithError() throws {
-
-    }
-
-    override func tearDownWithError() throws {
-
-    }
-
     func testGetQuoteReviews() throws {
         setupNetworkRepository("NetworkQuoteReviews")
 
