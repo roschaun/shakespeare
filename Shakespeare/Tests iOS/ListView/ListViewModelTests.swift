@@ -31,7 +31,7 @@ class ListViewModelTests: TestCase {
         let viewState = listViewState.first!
         XCTAssertFalse(viewState.isLoading)
         XCTAssertFalse(viewState.showError)
-        XCTAssert(viewState.quoteReviews.count == reviewCount)
+        XCTAssert(viewState.rowViewState.count == reviewCount)
     }
 
     func testGetQuoteReviewsNetworkError() throws {

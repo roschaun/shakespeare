@@ -11,14 +11,18 @@ struct ListViewState {
     var isLoading = true
     var showError = false
     var errorMessage: String?
-    var quoteReviews: [QuoteReview] = [QuoteReview]()
+    var rowViewState: [QuoteReviewViewState] = [QuoteReviewViewState]()
 }
 
 class ListViewStateReducer {
 
     class func reduceToState(_ quoteReviews: [QuoteReview]?) -> ListViewState {
         var listViewState = ListViewState()
-        listViewState.quoteReviews = quoteReviews ?? [QuoteReview]()
+        if let quoteReviews = quoteReviews {
+            for quoteReview in quoteReviews {
+                listViewState.rowViewState.append(QuoteReviewViewStateReducer.reduceToState(quoteReview))
+            }
+        }
         return listViewState
     }
 }
