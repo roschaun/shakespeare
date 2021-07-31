@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E49B51F26B4B356001C90CB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B51E26B4B356001C90CB /* Tests_iOS.swift */; };
-		1E49B52A26B4B356001C90CB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B52926B4B356001C90CB /* Tests_macOS.swift */; };
 		1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
 		1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50326B4B353001C90CB /* ShakespeareApp.swift */; };
 		1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B50426B4B353001C90CB /* ContentView.swift */; };
@@ -16,6 +14,25 @@
 		1E49B53026B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
 		1E49B53126B4B356001C90CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B50526B4B356001C90CB /* Assets.xcassets */; };
 		1E49B54126B4BD9B001C90CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */; };
+		1E49B54626B4C1BD001C90CB /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54526B4C1BD001C90CB /* NetworkController.swift */; };
+		1E49B54726B4C1BD001C90CB /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54526B4C1BD001C90CB /* NetworkController.swift */; };
+		1E49B54926B4C213001C90CB /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54826B4C213001C90CB /* NetworkRepository.swift */; };
+		1E49B54A26B4C213001C90CB /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54826B4C213001C90CB /* NetworkRepository.swift */; };
+		1E49B54D26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54C26B4C671001C90CB /* NetworkQuoteReview.swift */; };
+		1E49B54E26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54C26B4C671001C90CB /* NetworkQuoteReview.swift */; };
+		1E49B55126B4C71D001C90CB /* QuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55026B4C71D001C90CB /* QuoteReview.swift */; };
+		1E49B55226B4C71D001C90CB /* QuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55026B4C71D001C90CB /* QuoteReview.swift */; };
+		1E49B55526B4CA0F001C90CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55426B4CA0F001C90CB /* Date+Extension.swift */; };
+		1E49B55626B4CA0F001C90CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55426B4CA0F001C90CB /* Date+Extension.swift */; };
+		1E49B55926B508FB001C90CB /* NetworkRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55826B508FB001C90CB /* NetworkRepositoryTests.swift */; };
+		1E49B55B26B50C90001C90CB /* NetworkQuoteReviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B55A26B50C90001C90CB /* NetworkQuoteReviews.json */; };
+		1E49B55C26B515BC001C90CB /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54526B4C1BD001C90CB /* NetworkController.swift */; };
+		1E49B55D26B51618001C90CB /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54826B4C213001C90CB /* NetworkRepository.swift */; };
+		1E49B55E26B5162C001C90CB /* NetworkQuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B54C26B4C671001C90CB /* NetworkQuoteReview.swift */; };
+		1E49B55F26B51630001C90CB /* QuoteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55026B4C71D001C90CB /* QuoteReview.swift */; };
+		1E49B56026B51667001C90CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E49B55426B4CA0F001C90CB /* Date+Extension.swift */; };
+		1E49B56226B5179A001C90CB /* NetworkQuoteReview.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */; };
+		1E49B56426B51A92001C90CB /* NetworkQuoteReviewInvalidData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +62,19 @@
 		1E49B51426B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E49B51526B4B356001C90CB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1E49B51A26B4B356001C90CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E49B51E26B4B356001C90CB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		1E49B52026B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E49B52526B4B356001C90CB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E49B52926B4B356001C90CB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1E49B52B26B4B356001C90CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E49B54026B4BD9A001C90CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E49B54526B4C1BD001C90CB /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		1E49B54826B4C213001C90CB /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		1E49B54C26B4C671001C90CB /* NetworkQuoteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkQuoteReview.swift; sourceTree = "<group>"; };
+		1E49B55026B4C71D001C90CB /* QuoteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteReview.swift; sourceTree = "<group>"; };
+		1E49B55426B4CA0F001C90CB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1E49B55826B508FB001C90CB /* NetworkRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepositoryTests.swift; sourceTree = "<group>"; };
+		1E49B55A26B50C90001C90CB /* NetworkQuoteReviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReviews.json; sourceTree = "<group>"; };
+		1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReview.json; sourceTree = "<group>"; };
+		1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NetworkQuoteReviewInvalidData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,9 @@
 		1E49B50226B4B353001C90CB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1E49B55326B4C9E0001C90CB /* Extensions */,
+				1E49B54F26B4C6F8001C90CB /* Domain */,
+				1E49B54426B4C19E001C90CB /* Networking */,
 				1E49B50326B4B353001C90CB /* ShakespeareApp.swift */,
 				1E49B50426B4B353001C90CB /* ContentView.swift */,
 				1E49B50526B4B356001C90CB /* Assets.xcassets */,
@@ -139,7 +166,7 @@
 		1E49B51D26B4B356001C90CB /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1E49B51E26B4B356001C90CB /* Tests_iOS.swift */,
+				1E49B55726B508CE001C90CB /* Networking */,
 				1E49B52026B4B356001C90CB /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -148,10 +175,54 @@
 		1E49B52826B4B356001C90CB /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				1E49B52926B4B356001C90CB /* Tests_macOS.swift */,
 				1E49B52B26B4B356001C90CB /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		1E49B54426B4C19E001C90CB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B54B26B4C4FF001C90CB /* Models */,
+				1E49B54526B4C1BD001C90CB /* NetworkController.swift */,
+				1E49B54826B4C213001C90CB /* NetworkRepository.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E49B54B26B4C4FF001C90CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B54C26B4C671001C90CB /* NetworkQuoteReview.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E49B54F26B4C6F8001C90CB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B55026B4C71D001C90CB /* QuoteReview.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1E49B55326B4C9E0001C90CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B55426B4CA0F001C90CB /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E49B55726B508CE001C90CB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1E49B55826B508FB001C90CB /* NetworkRepositoryTests.swift */,
+				1E49B55A26B50C90001C90CB /* NetworkQuoteReviews.json */,
+				1E49B56126B5179A001C90CB /* NetworkQuoteReview.json */,
+				1E49B56326B51A92001C90CB /* NetworkQuoteReviewInvalidData.json */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +235,7 @@
 				1E49B50626B4B356001C90CB /* Sources */,
 				1E49B50726B4B356001C90CB /* Frameworks */,
 				1E49B50826B4B356001C90CB /* Resources */,
+				1E49B56626B58392001C90CB /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -295,6 +367,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49B55B26B50C90001C90CB /* NetworkQuoteReviews.json in Resources */,
+				1E49B56426B51A92001C90CB /* NetworkQuoteReviewInvalidData.json in Resources */,
+				1E49B56226B5179A001C90CB /* NetworkQuoteReview.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,13 +382,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E49B56626B58392001C90CB /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E49B50626B4B356001C90CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49B55126B4C71D001C90CB /* QuoteReview.swift in Sources */,
+				1E49B54926B4C213001C90CB /* NetworkRepository.swift in Sources */,
+				1E49B54D26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */,
 				1E49B52E26B4B356001C90CB /* ContentView.swift in Sources */,
+				1E49B55526B4CA0F001C90CB /* Date+Extension.swift in Sources */,
 				1E49B52C26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+				1E49B54626B4C1BD001C90CB /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49B55226B4C71D001C90CB /* QuoteReview.swift in Sources */,
+				1E49B54A26B4C213001C90CB /* NetworkRepository.swift in Sources */,
+				1E49B54E26B4C671001C90CB /* NetworkQuoteReview.swift in Sources */,
 				1E49B52F26B4B356001C90CB /* ContentView.swift in Sources */,
+				1E49B55626B4CA0F001C90CB /* Date+Extension.swift in Sources */,
 				1E49B52D26B4B356001C90CB /* ShakespeareApp.swift in Sources */,
+				1E49B54726B4C1BD001C90CB /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E49B51F26B4B356001C90CB /* Tests_iOS.swift in Sources */,
+				1E49B55F26B51630001C90CB /* QuoteReview.swift in Sources */,
+				1E49B55D26B51618001C90CB /* NetworkRepository.swift in Sources */,
+				1E49B55E26B5162C001C90CB /* NetworkQuoteReview.swift in Sources */,
+				1E49B55926B508FB001C90CB /* NetworkRepositoryTests.swift in Sources */,
+				1E49B56026B51667001C90CB /* Date+Extension.swift in Sources */,
+				1E49B55C26B515BC001C90CB /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +449,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E49B52A26B4B356001C90CB /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
