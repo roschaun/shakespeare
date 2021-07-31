@@ -15,7 +15,9 @@ struct MainListView: View {
         NavigationView {
             VStack {
                 List(viewModel.listViewState.quoteReviews, id: \.id) { quoteReview in
-                    MainRowView(quoteReview: quoteReview)
+                    NavigationLink(destination: MainDetailView(id: quoteReview.id ?? "")) {
+                        MainRowView(quoteReview: quoteReview)
+                    }
                 }
             }.onAppear(perform: {
                 viewModel.getQuoteReviews()

@@ -14,6 +14,7 @@ class TestCase: XCTestCase {
     var networkRepository: NetworkRepositoryProtocol!
     let url = URL(string: "https://shakespeare.podium.com")!
     let reviewCount = 6
+    let id = "9784620626604"
 
     func setupNetworkRepository(_ filename: String) {
         networkController = MockReviewsNetworkController(filename)
