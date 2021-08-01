@@ -15,7 +15,6 @@ class MainListViewModel: ViewModel {
         listViewState.isLoading = true
         cancellationToken = networkRepository.getQuoteReviews()
             .mapError({ [weak self] (error) -> Error in
-                self?.listViewState.errorMessage = "Unable to get Quote Reviews"
                 self?.listViewState.showError = true
                 self?.listViewState.isLoading = false
                 return error

@@ -10,7 +10,7 @@ import Foundation
 struct ListViewState {
     var isLoading = true
     var showError = false
-    var errorMessage: String?
+    var errorMessage = "Unable to retrieve Reviews"
     var rowViewState: [QuoteReviewViewState] = [QuoteReviewViewState]()
 }
 

@@ -13,38 +13,52 @@ struct MainDetailView: View {
 
     var body: some View {
         ZStack {
-            VStack {
-                Image(viewModel.detailViewState.quoteReviewState.imageResource)
-                    .resizable()
-                    .frame(width: 240.0, height: 240.0)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                    .shadow(radius: 7)
-                VStack(alignment: .leading) {
-                    Text(viewModel.detailViewState.quoteReviewState.quote)
-                        .font(.title)
-                        .foregroundColor(.primary)
-
-                    Text("William Shakespeare")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-
-                    Divider()
-
-                    Text("Review Date")
-                        .font(.subheadline)
-                    Text(viewModel.detailViewState.quoteReviewState.date).font(.headline)
-
-                    Divider()
-
-                    Text("Rating")
-                        .font(.subheadline)
-                    Text(viewModel.detailViewState.quoteReviewState.rating).font(.headline)
-
+            if viewModel.detailViewState.isLoading {
+                VStack(alignment: .center) {
+                    ProgressView()
                 }
-                .padding()
+            }
+            if viewModel.detailViewState.showError {
+                VStack(alignment: .center) {
+                    Text(viewModel.detailViewState.errorMessage)
+                    Button("Retry") {
+                        viewModel.getQuoteReview(id)
+                    }.padding(10)
+                }.padding()
+            } else {
+                VStack {
+                    Image(viewModel.detailViewState.quoteReviewState.imageResource)
+                        .resizable()
+                        .frame(width: 240.0, height: 240.0)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 7)
+                    VStack(alignment: .leading) {
+                        Text(viewModel.detailViewState.quoteReviewState.quote)
+                            .font(.title)
+                            .foregroundColor(.primary)
 
-                Spacer()
+                        Text("William Shakespeare")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+
+                        Divider()
+
+                        Text("Review Date")
+                            .font(.subheadline)
+                        Text(viewModel.detailViewState.quoteReviewState.date).font(.headline)
+
+                        Divider()
+
+                        Text("Rating")
+                            .font(.subheadline)
+                        Text(viewModel.detailViewState.quoteReviewState.rating).font(.headline)
+
+                    }
+                    .padding()
+
+                    Spacer()
+                }
             }
         }
         .padding(10)

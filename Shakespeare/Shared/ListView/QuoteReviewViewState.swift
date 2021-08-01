@@ -13,7 +13,7 @@ struct QuoteReviewViewState {
     var rating: String = ""
     var date: String = ""
     var quote: String = ""
-    var imageResource: String = "Empty"
+    var imageResource = "Empty"
 }
 
 class QuoteReviewViewStateReducer {
