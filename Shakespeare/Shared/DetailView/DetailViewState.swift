@@ -10,7 +10,7 @@ import Foundation
 struct DetailViewState {
     var isLoading = true
     var showError = false
-    var errorMessage: String?
+    var errorMessage = "Unable to retrieve Review"
     var quoteReviewState: QuoteReviewViewState = QuoteReviewViewState()
 }
 
