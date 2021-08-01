@@ -4,7 +4,7 @@ Sample MVVM SwiftUI App that incorporates the following:
 
 - iOS App
 - MacOS App
-- WatchOS Complication
+- WatchOS Extension
 - Model View ViewModel Architecture
 - Combine Data Bindings
 - Swift Extensions
