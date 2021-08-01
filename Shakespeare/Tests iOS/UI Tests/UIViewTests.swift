@@ -27,6 +27,7 @@ class UIViewTests: XCTestCase {
         let cell = tablesQuery.cells.firstMatch
         let title = "Kaley Schiller Review"
         cell.tap()
+        sleep(1)
         XCTAssertTrue(app.navigationBars[title].exists, "Title \(title) doesn't exist")
         app.navigationBars[title].buttons["Shakespeare Reviews"].tap()
 
