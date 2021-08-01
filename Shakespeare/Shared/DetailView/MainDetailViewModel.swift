@@ -14,7 +14,6 @@ class MainDetailViewModel: ViewModel {
         detailViewState.isLoading = true
         cancellationToken = networkRepository.getQuoteReview(id)
             .mapError({ [weak self] (error) -> Error in
-                self?.detailViewState.errorMessage = "Unable to get Quote Reviews"
                 self?.detailViewState.showError = true
                 self?.detailViewState.isLoading = false
                 return error

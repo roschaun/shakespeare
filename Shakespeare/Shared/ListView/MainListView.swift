@@ -13,16 +13,32 @@ struct MainListView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                List(viewModel.listViewState.rowViewState, id: \.id) { rowViewState in
-                    ZStack {
-                        MainRowView(rowViewState: rowViewState)
-                        NavigationLink(destination: MainDetailView(id: rowViewState.id)) {
-                        }
-                        .hidden()
+            ZStack {
+                if viewModel.listViewState.isLoading {
+                    VStack(alignment: .center) {
+                        ProgressView()
                     }
                 }
-                .background(Color.clear)
+                if viewModel.listViewState.showError {
+                    VStack(alignment: .center) {
+                        Text(viewModel.listViewState.errorMessage)
+                        Button("Retry") {
+                            viewModel.getQuoteReviews()
+                        }.padding(10)
+                    }.padding()
+                } else {
+                    VStack {
+                        List(viewModel.listViewState.rowViewState, id: \.id) { rowViewState in
+                            ZStack {
+                                MainRowView(rowViewState: rowViewState)
+                                NavigationLink(destination: MainDetailView(id: rowViewState.id)) {
+                                }
+                                .hidden()
+                            }
+                        }
+                        .background(Color.clear)
+                    }
+                }
             }.onAppear(perform: {
                 viewModel.getQuoteReviews()
             })
