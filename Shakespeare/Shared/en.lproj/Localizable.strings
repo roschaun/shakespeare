@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Shakespeare
+
+  Created by Roschaun Johnson on 8/1/21.
+  
+*/
+"main_screen_title" = "Shakespeare Reviews";
+"retry_label" = "Retry";
+"review_text" = "Review";
+"reviewed_by_text" = "Reviewed By:";
+"rating_text" = "Rating";
+"retrieve_reviews_error_text" = "Unable to retrieve Reviews";
+"retrieve_review_error_text" = "Unable to retrieve Review";
+"review_date_text" = "Review Date";

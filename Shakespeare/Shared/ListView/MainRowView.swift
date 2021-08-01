@@ -33,7 +33,7 @@ struct RowContentView: View {
                     .font(.subheadline)
                     .fixedSize(horizontal: false, vertical: true)
                 HStack {
-                    Text("Reviewed By:")
+                    Text(NSLocalizedString("reviewed_by_text", comment: ""))
                         .font(.caption)
                     Text(rowViewState.author)
                         .font(.caption)
@@ -42,7 +42,7 @@ struct RowContentView: View {
             Spacer()
             VStack(alignment: .center) {
                 Text(rowViewState.rating).font(.largeTitle)
-                Text("Rating").font(.subheadline)
+                Text(NSLocalizedString("rating_text", comment: "")).font(.subheadline)
             }
         }
         .padding()

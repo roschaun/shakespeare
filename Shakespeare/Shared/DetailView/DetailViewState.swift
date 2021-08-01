@@ -10,7 +10,7 @@ import Foundation
 struct DetailViewState {
     var isLoading = true
     var showError = false
-    var errorMessage = "Unable to retrieve Review"
+    var errorMessage = NSLocalizedString("retrieve_review_error_text", comment: "")
     var quoteReviewState: QuoteReviewViewState = QuoteReviewViewState()
 }
 

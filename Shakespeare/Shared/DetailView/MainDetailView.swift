@@ -21,7 +21,7 @@ struct MainDetailView: View {
             if viewModel.detailViewState.showError {
                 VStack(alignment: .center) {
                     Text(viewModel.detailViewState.errorMessage)
-                    Button("Retry") {
+                    Button(NSLocalizedString("retry_label", comment: "")) {
                         viewModel.getQuoteReview(id)
                     }.padding(10)
                 }.padding()
@@ -44,13 +44,13 @@ struct MainDetailView: View {
 
                         Divider()
 
-                        Text("Review Date")
+                        Text(NSLocalizedString("review_date_text", comment: ""))
                             .font(.subheadline)
                         Text(viewModel.detailViewState.quoteReviewState.date).font(.headline)
 
                         Divider()
 
-                        Text("Rating")
+                        Text(NSLocalizedString("rating_text", comment: ""))
                             .font(.subheadline)
                         Text(viewModel.detailViewState.quoteReviewState.rating).font(.headline)
 
@@ -64,7 +64,9 @@ struct MainDetailView: View {
         .padding(10)
         .onAppear(perform: {
             viewModel.getQuoteReview(id)
-        }).navigationTitle("\(viewModel.detailViewState.quoteReviewState.author) Review")
+        }).navigationTitle(
+            "\(viewModel.detailViewState.quoteReviewState.author) \(NSLocalizedString("review_text", comment: ""))"
+        )
     }
 }
 
