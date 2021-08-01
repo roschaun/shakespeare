@@ -10,7 +10,7 @@ import Foundation
 struct ListViewState {
     var isLoading = true
     var showError = false
-    var errorMessage = "Unable to retrieve Reviews"
+    var errorMessage = NSLocalizedString("retrieve_reviews_error_text", comment: "")
     var rowViewState: [QuoteReviewViewState] = [QuoteReviewViewState]()
 }
 

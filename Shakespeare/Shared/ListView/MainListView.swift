@@ -22,7 +22,7 @@ struct MainListView: View {
                 if viewModel.listViewState.showError {
                     VStack(alignment: .center) {
                         Text(viewModel.listViewState.errorMessage)
-                        Button("Retry") {
+                        Button(NSLocalizedString("retry_label", comment: "")) {
                             viewModel.getQuoteReviews()
                         }.padding(10)
                     }.padding()
@@ -42,7 +42,7 @@ struct MainListView: View {
             }.onAppear(perform: {
                 viewModel.getQuoteReviews()
             })
-            .navigationTitle("Shakespeare Reviews")
+            .navigationTitle(NSLocalizedString("main_screen_title", comment: ""))
         }
     }
 }
